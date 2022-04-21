@@ -3,13 +3,25 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-heaer',
   templateUrl: './heaer.component.html',
-  styleUrls: ['./heaer.component.scss']
+  styleUrls: ['./heaer.component.scss'],
 })
 export class HeaerComponent implements OnInit {
+  public msg: string = 'hello,world!';
+  public customers: any[] = [
+    { name: 'aaaa', status: true },
+    { name: 'bbbb', status: true },
+    { name: 'cccc', status: false },
+  ];
 
-  constructor() { }
+  public dateTime: number = 0;
+  public htmlstr: string = '<p>hello</p>';
 
-  ngOnInit(): void {
+  constructor() {
+    var d: number = new Date().getTime();
+    console.log(d);
+    this.dateTime = d;
+    // this.htmlstr = '<p>hello</p>';
   }
 
+  ngOnInit(): void {}
 }
