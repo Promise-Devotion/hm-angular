@@ -20,7 +20,7 @@ export class HeaerComponent implements OnInit {
     var d: number = new Date().getTime();
     console.log(d);
     this.dateTime = d;
-    // this.htmlstr = '<p>hello</p>';
+     this.htmlstr = '<p>hello</p>';
   }
 
   ngOnInit(): void {}

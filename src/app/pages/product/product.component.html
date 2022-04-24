@@ -1,0 +1,15 @@
+<p>product works!</p>
+<div>
+  <div *ngFor="let product of products">
+
+    <h3>
+      <a [title]="product.name + ' details'" [routerLink]="['/detail']" [queryParams]="{productid:product.id}">
+        {{ product.name }}
+      </a>
+    </h3>
+
+  </div>
+  <div>
+    <button (click)="gotoproducydetail()">点击跳转</button>
+  </div>
+</div>

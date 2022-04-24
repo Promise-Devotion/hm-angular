@@ -5,3 +5,11 @@
 .red {
   color: red;
 }
+
+.logo {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('../../../assets/images/logo.png') no-repeat center;
+  background-size: contain;
+}
