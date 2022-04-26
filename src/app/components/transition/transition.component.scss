@@ -1,0 +1,11 @@
+.transition-contain {
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: #fff;
+  transform: translate(100%, 0);
+  transition: all 2s;
+}

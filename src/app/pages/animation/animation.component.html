@@ -1,0 +1,14 @@
+<div class="animation-contain">
+  <div class="text">
+    <p>内容区域</p>
+    <div>
+      <button (click)="showaside()">显示</button>
+      <button (click)="hideaside()">隐藏</button>
+      <button (click)="showtoggle()">显示或隐藏</button>
+    </div>
+  </div>
+  <div #aside class="aside hide">
+    transitio区域
+  </div>
+  <!-- <app-transition #aside></app-transition> -->
+</div>

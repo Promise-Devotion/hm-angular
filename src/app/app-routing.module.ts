@@ -7,6 +7,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { NewsdetailComponent } from './pages/newsdetail/newsdetail.component';
 import { WelcomeComponent } from './pages/home/welcome/welcome.component';
 import { SettingComponent } from './pages/home/setting/setting.component';
+import { AnimationComponent } from './pages/animation/animation.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,10 @@ const routes: Routes = [
   {
     path: 'newsdetail/:id',
     component: NewsdetailComponent,
+  },
+  {
+    path: 'animation',
+    component: AnimationComponent,
   },
   {
     path: '**',

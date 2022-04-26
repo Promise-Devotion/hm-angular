@@ -1,29 +1,6 @@
 .content {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   // align-items: center;
-}
-
-a,
-a:visited,
-a:hover {
-  color: #1976d2;
-  text-decoration: none;
-}
-
-
-/* Responsive Styles */
-@media screen and (max-width: 767px) {
-
-  svg#rocket-smoke {
-    right: 120px;
-    transform: rotate(-5deg);
-  }
-}
-
-@media screen and (max-width: 575px) {
-  svg#rocket-smoke {
-    display: none;
-    visibility: hidden;
-  }
 }

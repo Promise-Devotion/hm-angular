@@ -1,0 +1,29 @@
+.animation-contain {
+  height: 80vh;
+  position: relative;
+
+  .text {
+    position: absolute;
+    left: 0;
+  }
+
+  .aside {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: #fff;
+    transform: translate(100%, 0px);
+    transition: all 2s;
+  }
+
+  .show {
+    transform: translate(0, 0);
+  }
+
+  .hide {
+    transform: translate(100%, 0);
+  }
+}

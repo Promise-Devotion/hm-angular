@@ -14,6 +14,8 @@ import { NewsdetailComponent } from './pages/newsdetail/newsdetail.component';
 import { WelcomeComponent } from './pages/home/welcome/welcome.component';
 import { SettingComponent } from './pages/home/setting/setting.component';
 import { Demo1Component } from './components/demo1/demo1.component';
+import { AnimationComponent } from './pages/animation/animation.component';
+import { TransitionComponent } from './components/transition/transition.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { Demo1Component } from './components/demo1/demo1.component';
     WelcomeComponent,
     SettingComponent,
     Demo1Component,
+    AnimationComponent,
+    TransitionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
