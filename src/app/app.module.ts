@@ -16,6 +16,9 @@ import { SettingComponent } from './pages/home/setting/setting.component';
 import { Demo1Component } from './components/demo1/demo1.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 import { TransitionComponent } from './components/transition/transition.component';
+import { DatapatchComponent } from './pages/datapatch/datapatch.component';
+import { Child2Component } from './components/child2/child2.component';
+import { Child3Component } from './components/child3/child3.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { TransitionComponent } from './components/transition/transition.componen
     Demo1Component,
     AnimationComponent,
     TransitionComponent,
+    DatapatchComponent,
+    Child2Component,
+    Child3Component,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

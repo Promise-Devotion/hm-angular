@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-demo1',
@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./demo1.component.scss'],
 })
 export class Demo1Component implements OnInit {
+  /**
+   * Input
+    DECORATOR
+    一个装饰器，用来把某个类字段标记为输入属性，并提供配置元数据。 
+    该输入属性会绑定到模板中的某个 DOM 属性。当变更检测时，Angular 会自动使用这个 DOM 属性的值来更新此数据属性。
+   */
+  @Input() msg: string | undefined;
+  @Input() datarun: any;
+  @Input() home: any;
   constructor() {}
 
   ngOnInit(): void {}
   run() {
     console.log('demo1的方法');
+  }
+  getFatherFunction() {
+    alert(this.home.msg);
+    this.home.datarun();
   }
 }

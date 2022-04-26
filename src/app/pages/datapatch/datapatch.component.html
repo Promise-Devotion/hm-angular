@@ -1,0 +1,27 @@
+<div class="datapatch-contain">
+  <!-- <p>datapatch works!</p> -->
+  <h2>父组件传给子组件</h2>
+  <br>
+  <br>
+  <br>
+  <app-demo1 [msg]="msg" [datarun]="datarun" [home]="this"></app-demo1>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <h2>子组件传给父组件</h2>
+  <br>
+  <button (click)="getChildData()">获取child2子组件数据</button>
+  <br>
+  <br>
+  <app-child2 #child2></app-child2>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <h2>子组件传给父组件</h2>
+  <br>
+  <app-child3 (childOurter)="duleChildData($event)"></app-child3>
+</div>

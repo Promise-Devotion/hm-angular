@@ -8,6 +8,7 @@ import { NewsdetailComponent } from './pages/newsdetail/newsdetail.component';
 import { WelcomeComponent } from './pages/home/welcome/welcome.component';
 import { SettingComponent } from './pages/home/setting/setting.component';
 import { AnimationComponent } from './pages/animation/animation.component';
+import { DatapatchComponent } from './pages/datapatch/datapatch.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     path: 'animation',
     component: AnimationComponent,
+  },
+  {
+    path: 'datapatch',
+    component: DatapatchComponent,
   },
   {
     path: '**',
