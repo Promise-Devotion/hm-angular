@@ -11,6 +11,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { ProductComponent } from './pages/product/product.component';
 import { NewsComponent } from './pages/news/news.component';
 import { NewsdetailComponent } from './pages/newsdetail/newsdetail.component';
+import { WelcomeComponent } from './pages/home/welcome/welcome.component';
+import { SettingComponent } from './pages/home/setting/setting.component';
+import { Demo1Component } from './components/demo1/demo1.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { NewsdetailComponent } from './pages/newsdetail/newsdetail.component';
     ProductComponent,
     NewsComponent,
     NewsdetailComponent,
+    WelcomeComponent,
+    SettingComponent,
+    Demo1Component,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

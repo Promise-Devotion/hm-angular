@@ -1,1 +1,22 @@
-<p>home works!</p>
+<div class="home-contain">
+  <div class="home-top flex">
+    <p>home works!</p>
+    <button (click)="runChildFunction()">点击执行子组件中的方法</button>
+    <app-demo1 #demo1></app-demo1>
+  </div>
+  <div class="main-contain flex">
+    <div class="left">
+      <ul>
+        <li>
+          <a href="" [routerLink]="['/home/welcome']" routerLinkActive="lingactive">欢迎</a>
+        </li>
+        <li>
+          <a href="" [routerLink]="['/home/setting']" routerLinkActive="lingactive">系统设置</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
