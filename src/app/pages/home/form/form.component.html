@@ -1,0 +1,35 @@
+<div class="form-contain">
+  <h2>人员登记</h2>
+  <ul class="detail-contain">
+    <li class="flex">
+      <label for="" class="label">姓名：</label>
+      <div>
+        <input type="text" [(ngModel)]="registerParam.username">
+      </div>
+    </li>
+    <li class="flex">
+      <label for="" class="label">性别</label>
+      <div>
+        <input type="radio" name="sex" value="1" id="sex1" [(ngModel)]="registerParam.sex"><label for="sex1">男</label>
+        <input type="radio" name="sex" value="0" id="sex2" [(ngModel)]="registerParam.sex"><label for="sex2">女</label>
+      </div>
+    </li>
+    <li class="flex">
+      <label for="" class="label">城市</label>
+      <div>
+        <select name="" id="" [(ngModel)]="registerParam.city">
+          <option [value]="item" *ngFor="let item of cityList">{{item}}</option>
+        </select>
+      </div>
+    </li>
+    <li class="flex">
+      <label for="" class="label">爱好</label>
+      <div>
+        <span *ngFor="let item of hobbies;let i = index">
+          <input type="checkbox" [id]="'hobby'+i"><label for="">{{item.title}}</label>
+        </span>
+      </div>
+    </li>
+    <button (click)="submitData()">点击提交</button>
+  </ul>
+</div>

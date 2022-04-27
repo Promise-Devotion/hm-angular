@@ -1,0 +1,10 @@
+<div class="learn-contain">
+  <p>learning works!</p>
+  <h2>双向数据绑定 MVVM只针对表单</h2>
+  <div class="">
+    <input type="text" [(ngModel)]="person.name">{{person.name}}年龄：<span>{{person.age}}</span>
+    <br>
+    <button (click)="changeName()">点击改变name的值</button>
+    <button (click)="sublitData()">提交数据</button>
+  </div>
+</div>

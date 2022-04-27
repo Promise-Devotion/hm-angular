@@ -1,0 +1,22 @@
+.form-contain {
+  h2 {
+    text-align: center;
+  }
+
+  .detail-contain {
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 70%;
+    padding: 16px;
+
+    li {
+      margin: 8px 0;
+    }
+
+    .label {
+      display: inline-block;
+      width: 160px;
+    }
+  }
+}

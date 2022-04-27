@@ -9,6 +9,10 @@ import { WelcomeComponent } from './pages/home/welcome/welcome.component';
 import { SettingComponent } from './pages/home/setting/setting.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 import { DatapatchComponent } from './pages/datapatch/datapatch.component';
+import { LearningComponent } from './pages/home/learning/learning.component';
+import { FormComponent } from './pages/home/form/form.component';
+import { ServiceComponent } from './pages/service/service.component';
+import { BasicKnowledgeComponent } from './pages/service/basic-knowledge/basic-knowledge.component';
 
 const routes: Routes = [
   {
@@ -22,6 +26,14 @@ const routes: Routes = [
       {
         path: 'setting',
         component: SettingComponent,
+      },
+      {
+        path: 'learn',
+        component: LearningComponent,
+      },
+      {
+        path: 'form',
+        component: FormComponent,
       },
       {
         path: '**',
@@ -55,6 +67,20 @@ const routes: Routes = [
   {
     path: 'datapatch',
     component: DatapatchComponent,
+  },
+  {
+    path: 'service',
+    component: ServiceComponent,
+    children: [
+      {
+        path: 'basic-knowledge',
+        component: BasicKnowledgeComponent,
+      },
+      {
+        path: '**',
+        redirectTo: 'basic-knowledge',
+      },
+    ],
   },
   {
     path: '**',

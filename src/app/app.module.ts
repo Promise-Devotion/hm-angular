@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,9 +20,19 @@ import { TransitionComponent } from './components/transition/transition.componen
 import { DatapatchComponent } from './pages/datapatch/datapatch.component';
 import { Child2Component } from './components/child2/child2.component';
 import { Child3Component } from './components/child3/child3.component';
+import { FormatterDatePipe } from './pipe/formatter-date.pipe';
+import { FormatterSexPipe } from './pipe/formatter-sex.pipe';
+import { LearningComponent } from './pages/home/learning/learning.component';
+import { FormComponent } from './pages/home/form/form.component';
+
+// 引入service服务，并配置
+import { StorageService } from './services/storage.service';
+import { ServiceComponent } from './pages/service/service.component';
+import { BasicKnowledgeComponent } from './pages/service/basic-knowledge/basic-knowledge.component';
 
 @NgModule({
   declarations: [
+    // 组件
     AppComponent,
     HeaerComponent,
     HomeComponent,
@@ -39,9 +50,15 @@ import { Child3Component } from './components/child3/child3.component';
     DatapatchComponent,
     Child2Component,
     Child3Component,
+    FormatterDatePipe,
+    FormatterSexPipe,
+    LearningComponent,
+    FormComponent,
+    ServiceComponent,
+    BasicKnowledgeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, FormsModule], // 模块
+  providers: [StorageService], // 服务
   bootstrap: [AppComponent],
 })
 export class AppModule {}

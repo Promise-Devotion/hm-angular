@@ -1,1 +1,39 @@
-<p>setting works!</p>
+<div class="setting-contain">
+  <h2>条件判断*ngSwitch</h2>
+  <ul>
+    <li *ngFor="let item of orderList; let i = index">
+      <span>{{i}}</span>
+      <span>{{item.name}}</span>
+      <span>{{item.time}}</span>
+      <span [ngSwitch]="item.orderStatus">
+        <span *ngSwitchCase="1" [ngClass]="{'orange': item.orderStatus == 1}">已揽件</span>
+        <span *ngSwitchCase="2" [ngClass]="{'yellow': item.orderStatus == 2}">已发货</span>
+        <span *ngSwitchCase="3" [ngClass]="{'cyan': item.orderStatus == 3}">待收货</span>
+        <span *ngSwitchCase="4" [ngClass]="{'green': item.orderStatus == 4}">已签收</span>
+        <span *ngSwitchCase="5" [ngClass]="{'red': item.orderStatus == 5}">订单已取消</span>
+      </span>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <h2>绑定属性 ngClass,ngStyle</h2>
+  <div>
+    <p [ngStyle]="{'font-size.px': 20}">ngStyle字体大小</p>
+  </div>
+  <br>
+  <br>
+  <h2>管道</h2>
+  <br>
+  <div>
+    <p>{{nowDate | date: 'yyyy-MM-dd HH:mm:ss'}}</p>
+    <p>{{sexValue | formatterSex}}</p>
+    <button (click)="setSex()">点击改变性别</button>
+  </div>
+  <br>
+  <br>
+  <h2>表单事件</h2>
+  <div>
+    <input type="text" (keydown)="printValue($event)">
+    <input type="text" (keyup)="keyup($event)">
+  </div>
+</div>

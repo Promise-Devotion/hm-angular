@@ -7,6 +7,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
   public flag: boolean = true;
+  public picUrl: string =
+    'https://t7.baidu.com/it/u=2168645659,3174029352&fm=193&f=GIF';
 
   /**
    * ViewChild DECORATOR
