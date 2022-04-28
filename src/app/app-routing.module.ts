@@ -13,6 +13,9 @@ import { LearningComponent } from './pages/home/learning/learning.component';
 import { FormComponent } from './pages/home/form/form.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { BasicKnowledgeComponent } from './pages/service/basic-knowledge/basic-knowledge.component';
+import { LifecycleComponent } from './pages/lifecycle/lifecycle.component';
+import { HttprequestComponent } from './pages/httprequest/httprequest.component';
+import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
 
 const routes: Routes = [
   {
@@ -81,6 +84,18 @@ const routes: Routes = [
         redirectTo: 'basic-knowledge',
       },
     ],
+  },
+  {
+    path: 'lifecycle',
+    component: LifecycleComponent,
+  },
+  {
+    path: 'rxjslearn',
+    component: RxjslearnComponent,
+  },
+  {
+    path: 'httpresuest',
+    component: HttprequestComponent,
   },
   {
     path: '**',

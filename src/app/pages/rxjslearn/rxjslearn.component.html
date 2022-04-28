@@ -1,0 +1,26 @@
+<div class="rxjs-contain">
+  <p>rxjslearn works!</p>
+  <h2>异步编程方案</h2>
+  <div>
+    <h4>方案一、回调</h4>
+    <p [ngStyle]="{'color': 'red'}">{{response}}</p>
+  </div>
+  <br>
+  <div>
+    <h4>方案二、Promise</h4>
+    <p [ngStyle]="{'color': 'red'}">{{response1}}</p>
+  </div>
+  <div>
+    <h4>方案三、rxjs</h4>
+    <p [ngStyle]="{'color': 'red'}">{{response2}}</p>
+  </div>
+  <div>
+    <h4>一秒后撤回rxj操作</h4>
+    <p [ngStyle]="{'color': 'red'}">{{stream}}</p>
+  </div>
+  <div>
+    <h4>attention</h4>
+    <p>rxjs6.x版本后map,filter需要安装</p>
+    <p>使用filter处理返回的数据筛选偶数{{responseNum}} ----- {{responseNum2}}</p>
+  </div>
+</div>

@@ -29,6 +29,10 @@ import { FormComponent } from './pages/home/form/form.component';
 import { StorageService } from './services/storage.service';
 import { ServiceComponent } from './pages/service/service.component';
 import { BasicKnowledgeComponent } from './pages/service/basic-knowledge/basic-knowledge.component';
+import { LifecycleComponent } from './pages/lifecycle/lifecycle.component';
+import { LifedemoComponent } from './components/lifedemo/lifedemo.component';
+import { HttprequestComponent } from './pages/httprequest/httprequest.component';
+import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +60,10 @@ import { BasicKnowledgeComponent } from './pages/service/basic-knowledge/basic-k
     FormComponent,
     ServiceComponent,
     BasicKnowledgeComponent,
+    LifecycleComponent,
+    LifedemoComponent,
+    HttprequestComponent,
+    RxjslearnComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule], // 模块
   providers: [StorageService], // 服务
