@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -65,7 +66,7 @@ import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
     HttprequestComponent,
     RxjslearnComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule], // 模块
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule], // 模块
   providers: [StorageService], // 服务
   bootstrap: [AppComponent],
 })

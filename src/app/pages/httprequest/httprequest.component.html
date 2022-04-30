@@ -1,1 +1,19 @@
-<p>httprequest works!</p>
+<div class="http-contain">
+  <p>httprequest works!</p>
+  <h2>怕【roduct</h2>
+  <div class="product-contain">
+    <div *ngFor="let item of productList; let i = index">
+      <p class="title">{{item.title}}</p>
+      <div *ngFor="let pitem of item.list">
+        <span>{{pitem.title}}</span><span>---</span>
+      </div>
+    </div>
+  </div>
+  <h2>hotlist</h2>
+  <div class="product-contain">
+    <div>
+      <p class="title">{{hotList}}</p>
+
+    </div>
+  </div>
+</div>
