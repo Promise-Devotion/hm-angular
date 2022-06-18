@@ -34,6 +34,7 @@ import { LifecycleComponent } from './pages/lifecycle/lifecycle.component';
 import { LifedemoComponent } from './components/lifedemo/lifedemo.component';
 import { HttprequestComponent } from './pages/httprequest/httprequest.component';
 import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
+import { TestComponent } from './pages/test/test.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
     LifedemoComponent,
     HttprequestComponent,
     RxjslearnComponent,
+    TestComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule], // 模块
   providers: [StorageService], // 服务
