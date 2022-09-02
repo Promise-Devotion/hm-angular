@@ -21,7 +21,7 @@ export class DatapatchComponent implements OnInit {
   ngAfterViewInit(): void {
     console.log(this.child2);
   }
-  datarun() {
+  dataRun() {
     alert('我是父组件的run方法');
   }
   getChildData() {

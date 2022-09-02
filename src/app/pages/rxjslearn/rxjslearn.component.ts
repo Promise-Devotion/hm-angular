@@ -14,6 +14,8 @@ export class RxjslearnComponent implements OnInit {
   public stream: any = '';
   public responseNum: number = 0;
   public responseNum2: number = 0;
+  public response3: any = '';
+  public timer: any;
 
   constructor(public storage: StorageService) {}
 
@@ -41,11 +43,23 @@ export class RxjslearnComponent implements OnInit {
 
     let steam = this.storage.getRxjsNum();
     let steam2 = this.storage.getRxjsNum();
+
+    this.timer = setInterval(() => {
+      this.storage.getRxjsData().subscribe((res) => {
+        this.response3 = res;
+        console.log(this.response2);
+      });
+    }, 1000);
     steam.pipe(filter((val) => val % 2 === 0)).subscribe((value) => {
       this.responseNum = value;
     });
     steam2.pipe(map((value) => value * 2)).subscribe((value) => {
       this.responseNum2 = value;
     });
+  }
+
+  ngOnDestroy() {
+    console.log('08ngOnDestroy执行了····');
+    clearInterval(this.timer);
   }
 }

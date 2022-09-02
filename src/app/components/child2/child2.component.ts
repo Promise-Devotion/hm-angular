@@ -12,7 +12,7 @@ export class Child2Component implements OnInit {
 
   ngOnInit(): void {}
 
-  childrun() {
-    alert('我是子组件的childrun方法');
+  childRun(): void {
+    alert('我是子组件的childRun方法');
   }
 }

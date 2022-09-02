@@ -6,7 +6,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  @ViewChild('demo1') demo1: any;
+  @ViewChild('demo1', { static: true }) demo1: any;
   constructor() {}
   ngAfterViewInit(): void {
     // let oBox: any = document.getElementById('box1');
@@ -17,5 +17,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
   runChildFunction() {
     this.demo1.run();
+  }
+  fatherRun() {
+    alert('this. is father function')
   }
 }

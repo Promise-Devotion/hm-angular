@@ -30,7 +30,7 @@ export class StorageService {
   getRxjsData() {
     let count: number = 0;
     return new Observable((observe) => {
-      setInterval(() => {
+      setTimeout(() => {
         count++;
         let data: any = `这是${count}秒后返回的数据--rxjs`;
         observe.next(data);
@@ -40,7 +40,7 @@ export class StorageService {
   getRxjsNum() {
     let count: number = 0;
     return new Observable<any>((observe) => {
-      setInterval(() => {
+      setTimeout(() => {
         count++;
         observe.next(count);
       }, 1000);

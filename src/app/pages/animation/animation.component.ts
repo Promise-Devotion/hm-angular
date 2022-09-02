@@ -16,12 +16,12 @@ export class AnimationComponent implements OnInit {
   ngOnInit(): void {}
   hideaside() {
     let aside: any = this.aside.nativeElement;
-    aside.style.transform = 'translate(100%, 0)';
+    aside.setAttribute('class', 'aside hide');
   }
   showaside() {
     // this.aside
     let aside: any = this.aside.nativeElement;
-    aside.style.transform = 'translate(0, 0)';
+    aside.setAttribute('class', 'aside show');
   }
   showtoggle() {
     let aside: any = this.aside.nativeElement;
