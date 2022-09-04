@@ -21,7 +21,7 @@ export class NewsComponent implements OnInit {
   constructor(public router: Router) {}
 
   ngOnInit(): void {}
-  gotonewsdetail(id: string) {
+  gotoNewsDetail(id: string) {
     this.router.navigate(['/newsdetail', id]);
   }
 }

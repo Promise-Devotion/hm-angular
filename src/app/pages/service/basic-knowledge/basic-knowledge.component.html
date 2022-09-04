@@ -1,3 +1,10 @@
 <div class="knowledge">
   <p>basic-knowledge works!</p>
+  <div>
+    <div *ngFor="let item of userList">
+      <span>{{item._id}}</span>
+      <span>&nbsp;</span>
+      <span>{{item.name}}</span>
+    </div>
+  </div>
 </div>

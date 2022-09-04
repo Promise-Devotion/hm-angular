@@ -1,0 +1,4 @@
+1、Angular6及以上版本 数据返回结果获取内部数据 类型推断为any；
+  如果使用Object会报Property 'data' does not exist on type 'Object'的错误
+this.http.get(api).subscribe((res: any) => {})
+
