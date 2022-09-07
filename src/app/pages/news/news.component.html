@@ -1,4 +1,14 @@
 <p>news works!</p>
-<ul>
-  <li *ngFor="let item of newslist" (click)="gotoNewsDetail(item.id)">{{item.title}}</li>
-</ul>
+<!--<ul>-->
+<!--  <li *ngFor="let item of newslist" (click)="gotoNewsDetail(item.id)">{{item.title}}</li>-->
+<!--</ul>-->
+<mat-list>
+  <mat-list-item *ngFor="let item of newslist">
+    <mat-icon matListIcon>folder</mat-icon>
+    <a matLine (click)="gotoNewsDetail(item.id)" style="cursor: pointer;margin-bottom:10px"> {{item.title}} </a>
+    <p matLine>
+      <span> {{item.subject}} </span>
+      <span class="demo-2"> -- {{item.content}} </span>
+    </p>
+  </mat-list-item>
+</mat-list>

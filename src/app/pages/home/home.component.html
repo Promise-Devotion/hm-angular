@@ -1,7 +1,7 @@
 <div class="home-contain">
   <div class="home-top flex">
     <p>home works!</p>
-    <button (click)="runChildFunction()">点击执行子组件中的方法</button>
+    <button mat-raised-button color="primary" (click)="runChildFunction()">点击执行子组件中的方法</button>
     <app-demo1 [fatherRun]="fatherRun" #demo1></app-demo1>
   </div>
   <div class="main-contain flex">

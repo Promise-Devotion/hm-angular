@@ -1,1 +1,37 @@
-<p>register works!</p>
+<script src="../../../../../../React/hm-react/src/pages/register/index.jsx"></script>
+<div>
+  <p>register works!</p>
+  <div className="register-contain">
+    <p>注册</p>
+    <form [formGroup]="contactForm" (submit)="handleSubmit()">
+      <div>
+        <label for="">名字</label>
+        <input
+          type="text"
+          formControlName="name"
+          placeholder="请输入名字"
+        />
+      </div>
+      <div>
+        <label for="">邮箱</label>
+        <input
+          type="text"
+          formControlName="email"
+          placeholder="请输入邮箱"
+        />
+      </div>
+      <div>
+        <label for="">密码</label>
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="请输入密码"
+        />
+      </div>
+      <div>
+        <button>注册</button>
+<!--        <button (click)="handleSubmit()">注册</button>-->
+      </div>
+    </form>
+  </div>
+</div>

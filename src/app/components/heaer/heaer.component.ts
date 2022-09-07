@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, NgModule, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-heaer',
@@ -16,11 +17,14 @@ export class HeaerComponent implements OnInit {
   public dateTime: number = 0;
   public htmlstr: string = '<p>hello</p>';
 
-  constructor() {
+  constructor(public router: Router) {
     var d: number = new Date().getTime();
     this.dateTime = d;
     this.htmlstr = '<p>hello</p>';
   }
 
   ngOnInit(): void {}
+  gotoRegister() {
+    this.router.navigate(['/register'])
+  }
 }

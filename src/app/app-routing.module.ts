@@ -4,7 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { ProductComponent } from './pages/product/product.component';
 import { NewsComponent } from './pages/news/news.component';
-import { NewsdetailComponent } from './pages/newsdetail/newsdetail.component';
+import { NewsdetailComponent } from './pages/news/newsdetail/newsdetail.component';
 import { WelcomeComponent } from './pages/home/welcome/welcome.component';
 import { SettingComponent } from './pages/home/setting/setting.component';
 import { AnimationComponent } from './pages/animation/animation.component';
@@ -16,6 +16,7 @@ import { BasicKnowledgeComponent } from './pages/service/basic-knowledge/basic-k
 import { LifecycleComponent } from './pages/lifecycle/lifecycle.component';
 import { HttprequestComponent } from './pages/httprequest/httprequest.component';
 import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
+import {RegisterComponent} from "./pages/register/register.component";
 
 const routes: Routes = [
   {
@@ -54,6 +55,9 @@ const routes: Routes = [
   {
     path: 'news',
     component: NewsComponent,
+    children: [
+
+    ]
   },
   {
     path: 'detail',
@@ -96,6 +100,10 @@ const routes: Routes = [
   {
     path: 'httpresuest',
     component: HttprequestComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   },
   {
     path: '**',

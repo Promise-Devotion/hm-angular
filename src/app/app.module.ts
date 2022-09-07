@@ -2,6 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from "@angular/forms"
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+// material
+
+import { MaterialModule } from '../material/material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ProductComponent } from './pages/product/product.component';
 import { NewsComponent } from './pages/news/news.component';
-import { NewsdetailComponent } from './pages/newsdetail/newsdetail.component';
+import { NewsdetailComponent } from './pages/news/newsdetail/newsdetail.component';
 import { WelcomeComponent } from './pages/home/welcome/welcome.component';
 import { SettingComponent } from './pages/home/setting/setting.component';
 import { Demo1Component } from './components/demo1/demo1.component';
@@ -70,7 +77,7 @@ import { RegisterComponent } from './pages/register/register.component';
     TestComponent,
     RegisterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule], // 模块
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, ReactiveFormsModule, MaterialModule, BrowserAnimationsModule], // 模块
   providers: [StorageService], // 服务
   bootstrap: [AppComponent],
 })
