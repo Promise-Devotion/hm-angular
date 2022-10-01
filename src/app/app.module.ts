@@ -2,13 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from "@angular/forms"
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
-// material
-
-import { MaterialModule } from '../material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -43,7 +39,6 @@ import { HttprequestComponent } from './pages/httprequest/httprequest.component'
 import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
 import { TestComponent } from './pages/test/test.component';
 import { RegisterComponent } from './pages/register/register.component';
-
 @NgModule({
   declarations: [
     // 组件
@@ -77,7 +72,14 @@ import { RegisterComponent } from './pages/register/register.component';
     TestComponent,
     RegisterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, ReactiveFormsModule, MaterialModule, BrowserAnimationsModule], // 模块
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+  ], // 模块
   providers: [StorageService], // 服务
   bootstrap: [AppComponent],
 })

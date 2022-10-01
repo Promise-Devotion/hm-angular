@@ -239,13 +239,6 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/material@^14.2.0":
-  version "14.2.0"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-14.2.0.tgz#915a39bd7c6434ac2465964abb93cecd6034e5d7"
-  integrity sha512-Lh7Ccc6zi5ClFnr5w1ZFVHb5QnOye1si0xWvS5nMQG3e0OPFAt0oOhjILFIBMK7n2jq4kv6erqNX2fLkyRvTQw==
-  dependencies:
-    tslib "^2.3.0"
-
 "@angular/platform-browser-dynamic@^14.1.0-next.1":
   version "14.1.0-next.1"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-14.1.0-next.1.tgz#d4f542a1f75c8802a37757e61fc2ec07e196ca44"
@@ -2524,6 +2517,11 @@
     node-gyp "^8.4.1"
     read-package-json-fast "^2.0.3"
 
+"@popperjs/core@^2.11.6":
+  version "2.11.6"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
+  integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
+
 "@schematics/angular@14.1.0-next.1":
   version "14.1.0-next.1"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-14.1.0-next.1.tgz#3a1d8c30bf18c6502f09e25199fedffbfdf7b472"
@@ -3296,6 +3294,16 @@ boolbase@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap-sass@^3.4.3:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/bootstrap-sass/-/bootstrap-sass-3.4.3.tgz#742cc8f4286303ae9fe8e4c95237321eae73766c"
+  integrity sha512-vPgFnGMp1jWZZupOND65WS6mkR8rxhJxndT/AcMbqcq1hHMdkcH4sMPhznLzzoHOHkSCrd6J9F8pWBriPCKP2Q==
+
+bootstrap@5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.1.tgz#45f97ff05cbe828bad807b014d8425f3aeb8ec3a"
+  integrity sha512-UQi3v2NpVPEi1n35dmRRzBJFlgvWHYwyem6yHhuT6afYF+sziEt46McRbT//kVXZ7b1YUYEVGdXEH74Nx3xzGA==
 
 brace-expansion@^1.1.7:
   version "1.1.11"

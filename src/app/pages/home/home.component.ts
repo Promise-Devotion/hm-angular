@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-// import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +19,6 @@ export class HomeComponent implements OnInit {
     this.demo1.run();
   }
   fatherRun() {
-    alert('this. is father function')
+    alert('this. is father function');
   }
 }
