@@ -16,7 +16,9 @@ import { BasicKnowledgeComponent } from './pages/service/basic-knowledge/basic-k
 import { LifecycleComponent } from './pages/lifecycle/lifecycle.component';
 import { HttprequestComponent } from './pages/httprequest/httprequest.component';
 import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
-import {RegisterComponent} from "./pages/register/register.component";
+import { RegisterComponent } from './pages/register/register.component';
+import { ChartsComponent } from './pages/charts/charts.component';
+import { EchartsComponent } from './components/charts/echarts/echarts.component';
 
 const routes: Routes = [
   {
@@ -55,9 +57,7 @@ const routes: Routes = [
   {
     path: 'news',
     component: NewsComponent,
-    children: [
-
-    ]
+    children: [],
   },
   {
     path: 'detail',
@@ -102,8 +102,18 @@ const routes: Routes = [
     component: HttprequestComponent,
   },
   {
+    path: 'charts',
+    component: ChartsComponent,
+    children: [
+      {
+        path: 'echarts',
+        component: EchartsComponent,
+      },
+    ],
+  },
+  {
     path: 'register',
-    component: RegisterComponent
+    component: RegisterComponent,
   },
   {
     path: '**',

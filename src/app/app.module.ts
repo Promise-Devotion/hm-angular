@@ -39,6 +39,8 @@ import { HttprequestComponent } from './pages/httprequest/httprequest.component'
 import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
 import { TestComponent } from './pages/test/test.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ChartsComponent } from './pages/charts/charts.component';
+import { EchartsComponent } from './components/charts/echarts/echarts.component';
 @NgModule({
   declarations: [
     // 组件
@@ -71,6 +73,8 @@ import { RegisterComponent } from './pages/register/register.component';
     RxjslearnComponent,
     TestComponent,
     RegisterComponent,
+    ChartsComponent,
+    EchartsComponent,
   ],
   imports: [
     BrowserModule,

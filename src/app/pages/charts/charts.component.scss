@@ -1,0 +1,25 @@
+.home-contain {
+  padding: 10px 20px;
+
+  p {
+    margin: 20px;
+  }
+
+  .main-contain {
+    height: 70vh;
+
+    .left {
+      width: 30%;
+      border: 1px solid #e0e0e0;
+
+      .lingactive {
+        color: red;
+      }
+    }
+
+    .right {
+      width: 70%;
+      border: 1px solid #e0e0e0;
+    }
+  }
+}

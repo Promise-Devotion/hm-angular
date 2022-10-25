@@ -1,0 +1,22 @@
+<div class="home-contain">
+  <div class="home-top flex">
+    <p>charst works!</p>
+  </div>
+  <div class="main-contain flex">
+    <div class="left">
+      <ul>
+        <li>
+          <a
+            href=""
+            [routerLink]="['/charts/echarts']"
+            routerLinkActive="lingactive"
+            >echarts图表</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
