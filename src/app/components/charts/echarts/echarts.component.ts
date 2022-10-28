@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EchartsComponent implements OnInit {
   constructor() {}
-
+  // 创建表格对象
   ngOnInit(): void {}
 }
