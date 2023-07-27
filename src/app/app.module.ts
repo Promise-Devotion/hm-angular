@@ -1,4 +1,6 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+// 拦截器服务
+import { HttpInterceptorInterceptor } from './http-interceptor.interceptor';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -83,7 +85,11 @@ import { StorageService } from './services/storage.service';
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ], // 模块
-  providers: [StorageService], // 服务
+  providers: [StorageService, {
+    provide: HTTP_INTERCEPTORS,
+    useClass: HttpInterceptorInterceptor,
+    multi: true,
+  }], // 服务
   bootstrap: [AppComponent],
 })
 export class AppModule {}

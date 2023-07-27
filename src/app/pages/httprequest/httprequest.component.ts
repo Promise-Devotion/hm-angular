@@ -14,9 +14,15 @@ export class HttprequestComponent implements OnInit {
     /**
      * http://a.itying.com/api/productlist;
      */
-    let api: string = 'http://a.itying.com/api/productlist';
-    this.http.get(api).subscribe((res: any) => {
-      this.productList = res.result;
+    let api: string = '/bill-list?id=12353434';
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+      observe: 'body',
+      responseType: 'json',
+    };
+    this.http.get(api, {observe: 'body'}).subscribe((res: any) => {
+      this.productList = res.data;
+      console.log(res)
     });
   }
   getBaidu() {
@@ -32,6 +38,6 @@ export class HttprequestComponent implements OnInit {
 
   ngOnInit() {
     this.getData();
-    this.getBaidu();
+    // this.getBaidu();
   }
 }
