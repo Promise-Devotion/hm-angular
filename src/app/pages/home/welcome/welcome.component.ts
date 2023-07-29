@@ -6,6 +6,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./welcome.component.scss'],
 })
 export class WelcomeComponent implements OnInit {
+  public msg: string = '父组件中传来msg'
   public flag: boolean = true;
   public picUrl: string =
     'https://t7.baidu.com/it/u=2168645659,3174029352&fm=193&f=GIF';

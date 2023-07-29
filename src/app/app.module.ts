@@ -43,8 +43,8 @@ import { ServiceComponent } from './pages/service/service.component';
 import { TestComponent } from './pages/test/test.component';
 import { StorageService } from './services/storage.service';
 
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatTableModule } from '@angular/material/table'
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     // 组件
