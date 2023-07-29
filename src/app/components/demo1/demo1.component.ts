@@ -25,7 +25,9 @@ export class Demo1Component implements OnInit {
     console.log('demo1的方法');
   }
   getFatherFunction() {
+    console.log(this)
     alert(this.msg);
+  
     this.fatherRun();
   }
 }

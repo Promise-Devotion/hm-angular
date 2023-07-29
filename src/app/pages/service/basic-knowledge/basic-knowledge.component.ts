@@ -22,7 +22,7 @@ export class BasicKnowledgeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getUserList()
+    // this.getUserList()
   }
   getUserList() {
     this.http.get(`${this.baseUrl}/users/userlist?name=jim`).subscribe((res: any) => {

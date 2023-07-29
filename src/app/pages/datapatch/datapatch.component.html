@@ -4,7 +4,7 @@
   <br>
   <br>
   <br>
-  <app-demo1 [msg]="msg" [dataRun]="dataRun" [home]="this"></app-demo1>
+  <app-demo1 [msg]="msg" [dataRun]="dataRun" [home]="this" [fatherRun]="fatherRun"></app-demo1>
   <br>
   <br>
   <br><br>
@@ -12,7 +12,7 @@
   <br>
   <h2>子组件传给父组件</h2>
   <br>
-  <button (click)="getChildData()">获取child2子组件数据</button>
+  <button mat-raised-button color="accent" (click)="getChildData()">获取child2子组件数据</button>
   <br>
   <br>
   <app-child2 #child2></app-child2>

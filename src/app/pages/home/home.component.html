@@ -1,8 +1,12 @@
 <div class="home-contain">
   <div class="home-top flex">
     <p>home works!</p>
-    <button mat-raised-button color="primary" (click)="runChildFunction()">点击执行子组件中的方法</button>
+    <!-- <section>
+      <button mat-flat-button color="accent" (click)="runChildFunction()">Primary</button>
+    </section> -->
+    <button mat-raised-button color="accent" (click)="runChildFunction()">点击执行子组件中的方法</button>
     <app-demo1 [fatherRun]="fatherRun" [msg]="msg" #demo1></app-demo1>
+    <mat-slide-toggle>Toggle me!</mat-slide-toggle>
   </div>
   <div class="main-contain flex">
     <div class="left">

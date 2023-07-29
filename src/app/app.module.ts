@@ -43,8 +43,12 @@ import { ServiceComponent } from './pages/service/service.component';
 import { TestComponent } from './pages/test/test.component';
 import { StorageService } from './services/storage.service';
 
-import {MatPaginatorModule} from '@angular/material/paginator';
-import {MatTableModule} from '@angular/material/table';
+// import { MatPaginatorModule } from '@angular/material/paginator';
+// import { MatTableModule } from '@angular/material/table';
+// import { MatButtonModule } from '@angular/material/button';
+// import { MatSlideToggleModule } from '@angular/material/slide-toggle'
+// import {materialimport} from 'src/materialimport';
+import { MaterialModule } from '../material/material.module'
 @NgModule({
   declarations: [
     // 组件
@@ -81,14 +85,13 @@ import {MatTableModule} from '@angular/material/table';
     EchartsComponent,
   ],
   imports: [
-    MatTableModule,
-    MatPaginatorModule,
+    MaterialModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ], // 模块
   providers: [StorageService, {
     provide: HTTP_INTERCEPTORS,

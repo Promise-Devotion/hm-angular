@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child2.component.scss'],
 })
 export class Child2Component implements OnInit {
-  public msg: string = '我是子组件的msg';
+  public msg: string = '我是子组件child2的msg';
 
   constructor() {}
 
   ngOnInit(): void {}
 
   childRun(): void {
-    alert('我是子组件的childRun方法');
+    alert('我是子组件child2的childRun方法');
   }
 }

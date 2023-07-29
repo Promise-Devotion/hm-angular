@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Child2Component } from 'src/app/components/child2/child2.component';
 
 @Component({
   selector: 'app-datapatch',
@@ -13,22 +14,26 @@ export class DatapatchComponent implements OnInit {
    */
   public msg: string = 'datapatch组件间传值';
 
-  @ViewChild('child2') child2: any;
+  @ViewChild(Child2Component)
+  private Child2Component!: Child2Component;
 
   constructor() {}
 
   ngOnInit(): void {}
   ngAfterViewInit(): void {
-    console.log(this.child2);
+    console.log(this.Child2Component);
   }
   dataRun() {
     alert('我是父组件的run方法');
   }
   getChildData() {
-    alert(this.child2.msg);
-    this.child2.childrun();
+    alert(this.Child2Component.msg);
+    this.Child2Component.childRun();
   }
   duleChildData(e: any) {
     console.log(e);
+  }
+  fatherRun() {
+    alert('父组件方法被调用')
   }
 }
