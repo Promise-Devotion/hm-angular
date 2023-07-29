@@ -42,6 +42,9 @@ import { BasicKnowledgeComponent } from './pages/service/basic-knowledge/basic-k
 import { ServiceComponent } from './pages/service/service.component';
 import { TestComponent } from './pages/test/test.component';
 import { StorageService } from './services/storage.service';
+
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table'
 @NgModule({
   declarations: [
     // 组件
@@ -78,6 +81,8 @@ import { StorageService } from './services/storage.service';
     EchartsComponent,
   ],
   imports: [
+    MatTableModule,
+    MatPaginatorModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
@@ -92,4 +97,4 @@ import { StorageService } from './services/storage.service';
   }], // 服务
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
