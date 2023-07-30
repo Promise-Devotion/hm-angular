@@ -13,7 +13,7 @@ import { Child2Component } from './components/child2/child2.component';
 import { Child3Component } from './components/child3/child3.component';
 import { Demo1Component } from './components/demo1/demo1.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HeaerComponent } from './components/heaer/heaer.component';
+import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { TransitionComponent } from './components/transition/transition.component';
 import { AnimationComponent } from './pages/animation/animation.component';
@@ -53,7 +53,7 @@ import { MaterialModule } from '../material/material.module'
   declarations: [
     // 组件
     AppComponent,
-    HeaerComponent,
+    HeaderComponent,
     HomeComponent,
     DetailComponent,
     FooterComponent,
