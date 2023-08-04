@@ -29,6 +29,7 @@ import { NewsdetailComponent } from './pages/news/newsdetail/newsdetail.componen
 import { ProductComponent } from './pages/product/product.component';
 import { FormatterDatePipe } from './pipe/formatter-date.pipe';
 import { FormatterSexPipe } from './pipe/formatter-sex.pipe';
+import { BillComponent } from './pages/bill/bill.component'
 
 // 引入service服务，并配置
 import { EchartsComponent } from './components/charts/echarts/echarts.component';
@@ -46,7 +47,7 @@ import { StorageService } from './services/storage.service';
 /**
  * MaterialModule 
  */
-import { MaterialModule } from '../material/material.module'
+import { MaterialModule } from '../material/material.module';
 @NgModule({
   declarations: [
     // 组件
@@ -81,6 +82,7 @@ import { MaterialModule } from '../material/material.module'
     RegisterComponent,
     ChartsComponent,
     EchartsComponent,
+    BillComponent,
   ],
   imports: [
     BrowserModule,

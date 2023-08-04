@@ -19,6 +19,7 @@ import { RxjslearnComponent } from './pages/rxjslearn/rxjslearn.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ChartsComponent } from './pages/charts/charts.component';
 import { EchartsComponent } from './components/charts/echarts/echarts.component';
+import { BillComponent } from './pages/bill/bill.component';
 
 const routes: Routes = [
   {
@@ -114,6 +115,11 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent,
+  },
+  {
+    path: 'bill',
+    component: BillComponent,
+    // loadChildren: () => import('./pages/bill/bill.component').then(m => m.BillComponent),
   },
   {
     path: '**',

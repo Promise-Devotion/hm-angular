@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
 import { ActivatedRoute } from '@angular/router';
 
 
@@ -14,6 +15,8 @@ export interface PeriodicElement {
   styleUrls: ['./newsdetail.component.scss'],
 })
 export class NewsdetailComponent implements OnInit {
+  @Input()
+  color: ThemePalette
   public product: string = '';
   public displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   public dataSource: PeriodicElement[] = []

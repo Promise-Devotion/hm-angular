@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class ServiceComponent implements OnInit {
 
   constructor() { }
+  public msg: string = '这是service msg'
 
   ngOnInit(): void {
   }
 
+  fatherRun () {
+    console.log('this is service fatherrun')
+  }
 }

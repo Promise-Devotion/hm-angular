@@ -22,7 +22,7 @@ export class StorageService {
     return new Promise((resolve) => {
       setTimeout(() => {
         let data: any = '这是一秒后返回的数据--promise';
-        resolve(data);
+        return resolve(data);
       }, 2000);
     });
   }
